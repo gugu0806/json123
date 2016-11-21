@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	  <script>
+	 var list = [
+	  {"iL":"https://pic.pimg.tw/cucky0124/1473954659-3992259538.jpg",
+		"tL":"五十嵐",
+		"pL":"抹茶拿鐵<br>獨特漸層",
+		"hL":"http://cucky0124.pixnet.net/blog/post/333848730"},
+	  {"iL":"http://iphoto.ipeen.com.tw/photo/comment/100408/1137944/cm20160915___4cbe78312acd2b0a00887cad8694a986457.jpg",
+		"tL":"霸味羊肉爐",
+		"pL":"新北市<br>新莊",
+		"hL":"http://vreranda.pixnet.net/blog/post/220385589"},
+	  {"iL":"http://iphoto.ipeen.com.tw/photo/comment/100408/1170509/cm20161013___be235cf09436132952bbd20b99ed0e1f463.jpg",
+		"tL":"漁聞樂",
+		"pL":"台北市<br>松山",
+		"hL":"http://vreranda.pixnet.net/blog/post/220681055"},
+	  {"iL":"http://pic.pimg.tw/fanfancat/1413455368-2262935182_l.jpg",
+		  "tL":"思泊客",
+		  "pL":"台北市<br>信義",
+		  "hL":"http://fanfancat.pixnet.net/blog/post/188578533"},
+	  ];
+	  var str='';
+	  function f(){
+		for(i = 0;i<list.length;i++){
+			str += 	'<li class="collection-item avatar"><img src="'+list[i].iL+ '"alt="" class="circle">\
+				<span class="title">'+list[i].tL+'</span>'+'<p>'+list[i].pL+'</p>\
+				  <a href="'+list[i].hL+'" class="secondary-content"><i class="material-icons">grade</i></a></li>';
+		}
+	  document.getElementById("aaa").innerHTML = str;
+	  }
+	  
+	  
+	  </script>
+	  
+    </head>
+
+    <body onload="f()">
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+    <ul class="collection" id = "aaa">
+	</ul>
+	</body>
+  </html>
+        
